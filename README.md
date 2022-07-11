@@ -93,6 +93,17 @@ Not yet entirely sure why the decoupling is needed.
 
 For methods that interact with the Database objects such as: insert, get etc,, the first parameter should be the SQL Alchemy session.
 
+## Final result
+
+The final output contains, 3 endpoints:
+
+- a get all place objects from the db
+- a get single place object by id
+- a post new object to the db
+
+As shown here:
+![final api](/images/first_api.jpg)
+
 ### Source
 
 - Pydantic [https://pydantic-docs.helpmanual.io/](https://pydantic-docs.helpmanual.io/)
