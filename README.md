@@ -51,21 +51,15 @@ This is really cool, fast api also generates an interactive API documentation fo
 
 ### Issues
 
-Had a `[Errno 98] error while attempting to bind on address ('127.0.0.1', 8000): address already in use` error when sometime, to fix I needed to kill the service that was using the same url:
+Had a `[Errno 98] error while attempting to bind on address ('127.0.0.1', 8000): address already in use` error sometime. To fix I needed to kill the service that was using the same url.
 
 ```terminal
 lsof -i :8000
-To view all the services using the 8000 port, this will show the process id (pid) of the services too
+To view all the services using the 8000 port, this will show the process id (pid) of the services.
 
 kill -9 pid
 To terminate the guilty process
 ```
-
-### Sources
-
-- Explanation of concurrency and async: [https://fastapi.tiangolo.com/async/](https://fastapi.tiangolo.com/async/)
-- Python3 coroutines: [https://docs.python.org/3/library/asyncio-task.html](https://docs.python.org/3/library/asyncio-task.html)
-- [Already in use error](https://www.codegrepper.com/code-examples/shell/uvicorn+ERROR%3A+%5BErrno+98%5D+Address+already+in+use)
 
 ## POC 1: CodingNomads location APIs
 
@@ -104,6 +98,10 @@ The final output contains, 3 endpoints:
 As shown here:
 ![final api](/images/first_api.jpg)
 
-### Source
+## Sources
 
 - Pydantic [https://pydantic-docs.helpmanual.io/](https://pydantic-docs.helpmanual.io/)
+- Fast Nomads fast api guide [https://codingnomads.co/blog/python-fastapi-tutorial](https://codingnomads.co/blog/python-fastapi-tutorial)
+- Explanation of concurrency and async: [https://fastapi.tiangolo.com/async/](https://fastapi.tiangolo.com/async/)
+- Python3 coroutines: [https://docs.python.org/3/library/asyncio-task.html](https://docs.python.org/3/library/asyncio-task.html)
+- [Already in use error](https://www.codegrepper.com/code-examples/shell/uvicorn+ERROR%3A+%5BErrno+98%5D+Address+already+in+use)
