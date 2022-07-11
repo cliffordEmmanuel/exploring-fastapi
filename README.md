@@ -10,7 +10,7 @@ This seems fairly straight forward. Create a virtual environment and install `fa
 
 ### Code
 
-The bare bones code is [here](http://).
+The bare bones code is [here](https://github.com/cliffordEmmanuel/exploring-fastapi/blob/main/hello_world.py).
 
 ```python
 @app.get('/')
