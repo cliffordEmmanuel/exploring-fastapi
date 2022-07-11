@@ -36,11 +36,12 @@ This statement sends data to the browser which is a JSON reponse matching the di
 uvicorn hello_world:app --reload
 ```
 
-This command starts the uvicorn server which generates a webpage on this url: *(<http://127.0.0.1:8000>)*.
-Which generates this view:
+This command starts the uvicorn server which generates a webpage on this url: *(<http://127.0.0.1:8000>)*. Which generates the following view:
+
 ![hello world](/images/hello_world.jpg)
 
-This is cool, fast api also generates an interactive API documentation for the api using the `/docs` path.
+This is really cool, fast api also generates an interactive API documentation for the api using the `/docs` path.
+
 ![interactive docs](/images/interactive_docs.jpg)
 
 ### Sources
